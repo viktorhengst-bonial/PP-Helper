@@ -33,3 +33,16 @@ The app names the exported file from the first row when possible:
 ## Local data
 
 Presets and column settings are stored locally in your browser using IndexedDB/local storage fallback. To move presets to another browser or device, use **Export Presets** and **Import Presets** inside the app.
+
+
+## Hosting on GitHub Pages
+
+This repository includes a GitHub Pages workflow for hosting the standalone site.
+
+1. Push the repository to GitHub.
+2. In the GitHub repository, go to **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Push to the `main` branch, or run the **Deploy static site to GitHub Pages** workflow manually from the **Actions** tab.
+5. After the workflow succeeds, GitHub shows the public website URL in **Settings → Pages** and in the workflow summary.
+
+The hosted site serves `index.html` directly. No build or dependency installation is required.
